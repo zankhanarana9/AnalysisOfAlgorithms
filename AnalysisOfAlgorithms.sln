@@ -5,15 +5,15 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DivideAndConquer", "DivideAndConquer", "{6B281986-4F0E-4799-BF63-2AFF344CF545}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DivideAndConquerAlgorithms", "AnalysisOfAlgorithms\DivideAndConquer\DivideAndConquerAlgorithms.csproj", "{9E826DDF-46F9-49EB-A6FC-5A79640626F8}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sorting", "Sorting", "{3F0F892C-2413-47A8-839C-5EBBB4E39E69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithms", "SortingAlgorithms\SortingAlgorithms.csproj", "{830A5FE4-88AA-4443-90C2-0CB93916297B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortingAlgorithms", "SortingAlgorithms\SortingAlgorithms.csproj", "{830A5FE4-88AA-4443-90C2-0CB93916297B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithmsTest", "SortingAlgorithmsTest\SortingAlgorithmsTest.csproj", "{371B630B-967A-48E9-8C5E-0E696EB566BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DivideAndConquerTests", "UnitTestProject1\DivideAndConquerTests.csproj", "{DB073FA9-283D-468E-AAC4-45CD9F52E334}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DivideAndConquerTests", "DivideandConquerTests\DivideAndConquerTests.csproj", "{DB073FA9-283D-468E-AAC4-45CD9F52E334}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DivideAndConquerAlgorithms", "DivideAndConquerAlgorithms\DivideAndConquerAlgorithms.csproj", "{9E826DDF-46F9-49EB-A6FC-5A79640626F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9E826DDF-46F9-49EB-A6FC-5A79640626F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E826DDF-46F9-49EB-A6FC-5A79640626F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E826DDF-46F9-49EB-A6FC-5A79640626F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E826DDF-46F9-49EB-A6FC-5A79640626F8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{830A5FE4-88AA-4443-90C2-0CB93916297B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{830A5FE4-88AA-4443-90C2-0CB93916297B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{830A5FE4-88AA-4443-90C2-0CB93916297B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,15 +33,19 @@ Global
 		{DB073FA9-283D-468E-AAC4-45CD9F52E334}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB073FA9-283D-468E-AAC4-45CD9F52E334}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB073FA9-283D-468E-AAC4-45CD9F52E334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E826DDF-46F9-49EB-A6FC-5A79640626F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E826DDF-46F9-49EB-A6FC-5A79640626F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E826DDF-46F9-49EB-A6FC-5A79640626F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E826DDF-46F9-49EB-A6FC-5A79640626F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{9E826DDF-46F9-49EB-A6FC-5A79640626F8} = {6B281986-4F0E-4799-BF63-2AFF344CF545}
 		{830A5FE4-88AA-4443-90C2-0CB93916297B} = {3F0F892C-2413-47A8-839C-5EBBB4E39E69}
 		{371B630B-967A-48E9-8C5E-0E696EB566BF} = {3F0F892C-2413-47A8-839C-5EBBB4E39E69}
 		{DB073FA9-283D-468E-AAC4-45CD9F52E334} = {6B281986-4F0E-4799-BF63-2AFF344CF545}
+		{9E826DDF-46F9-49EB-A6FC-5A79640626F8} = {6B281986-4F0E-4799-BF63-2AFF344CF545}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {97FE8CDC-649D-401D-8E85-63D59092661E}

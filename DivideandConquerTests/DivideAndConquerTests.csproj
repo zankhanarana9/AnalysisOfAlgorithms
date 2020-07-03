@@ -60,7 +60,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AnalysisOfAlgorithms\DivideAndConquer\DivideAndConquerAlgorithms.csproj">
+    <ProjectReference Include="..\DivideAndConquerAlgorithms\DivideAndConquerAlgorithms.csproj">
       <Project>{9e826ddf-46f9-49eb-a6fc-5a79640626f8}</Project>
       <Name>DivideAndConquerAlgorithms</Name>
     </ProjectReference>
