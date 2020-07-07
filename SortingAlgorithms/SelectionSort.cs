@@ -6,21 +6,21 @@ namespace SortingAlgorithms
 {
     public static class SelectionSort
     {
-        public static void Sort<T>(T[] array) where T : IComparable
+        public static void Sort<T>(T[] matrix) where T : IComparable
         {
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < matrix.Length; i++)
             {
                 int minIndex = i;
-                T minValue = array[i];
-                for (int j = i; j < array.Length; j++)
+                T minValue = matrix[i];
+                for (int j = i; j < matrix.Length; j++)
                 {
-                    if (array[j].CompareTo(minValue) < 0)
+                    if (matrix[j].CompareTo(minValue) < 0)
                     {
                         minIndex = j;
-                        minValue = array[j];
+                        minValue = matrix[j];
                     }
                 }
-                Swap.swap(array, i, minIndex);
+                Swap.swap(matrix, i, minIndex);
             }
         }
     }

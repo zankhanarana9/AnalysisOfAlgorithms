@@ -6,33 +6,33 @@ namespace SortingAlgorithms
 {
     public static class QuickSortHoarePartition
     {
-        public static void Sort<T>(T[] array) where T : IComparable
+        public static void Sort<T>(T[] matrix) where T : IComparable
         {
-            Sort(array, 0, array.Length - 1);
+            Sort(matrix, 0, matrix.Length - 1);
         }
 
-        private static T[] Sort<T>(T[] array, int lower, int upper) where T : IComparable
+        private static T[] Sort<T>(T[] matrix, int lower, int upper) where T : IComparable
         {
             if (lower < upper)
             {
-                int p = Partition(array, lower, upper);
-                Sort(array, lower, p);
-                Sort(array, p + 1, upper);
+                int p = Partition(matrix, lower, upper);
+                Sort(matrix, lower, p);
+                Sort(matrix, p + 1, upper);
             }
-            return array;
+            return matrix;
         }
 
-        private static int Partition<T>(T[] array, int lower, int upper) where T : IComparable
+        private static int Partition<T>(T[] matrix, int lower, int upper) where T : IComparable
         {
             int i = lower;
             int j = upper;
-            T pivot = array[lower];
+            T pivot = matrix[lower];
             do
             {
-                while (array[i].CompareTo(pivot) < 0) { i++; }
-                while (array[j].CompareTo(pivot) > 0) { j--; }
+                while (matrix[i].CompareTo(pivot) < 0) { i++; }
+                while (matrix[j].CompareTo(pivot) > 0) { j--; }
                 if (i >= j) { break; }
-                Swap.swap(array, i, j);
+                Swap.swap(matrix, i, j);
             } while (i <= j);
             return j;
         }

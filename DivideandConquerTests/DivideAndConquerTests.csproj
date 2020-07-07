@@ -55,6 +55,10 @@
     <Compile Include="SecondLargestElementTest.cs" />
     <Compile Include="UnimodalTest.cs" />
     <Compile Include="IndexSameAsValue.cs" />
+    <Compile Include="FindPeakTest.cs" />
+    <Compile Include="LocalMinimaTest.cs" />
+    <Compile Include="SearchMatrixTest.cs" />
+    <Compile Include="RandomSelectTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -42,11 +42,16 @@
     <Compile Include="ClosestPair.cs" />
     <Compile Include="IndexSameAsValue.cs" />
     <Compile Include="InversionArray.cs" />
+    <Compile Include="FindPeaK.cs" />
+    <Compile Include="LocalMinima.cs" />
     <Compile Include="MaxSubArray.cs" />
     <Compile Include="Multiply.cs" />
     <Compile Include="MergeSort.cs" />
+    <Compile Include="RandomizedSelection.cs" />
+    <Compile Include="SearchMatrix.cs" />
     <Compile Include="SecondLargestNumber.cs" />
     <Compile Include="StrassensMatrixMultiplication.cs" />
+    <Compile Include="Swap.cs" />
     <Compile Include="Unimodal.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -7,35 +7,35 @@ namespace SortingAlgorithms
     public static class InsertionSort
     {
 
-        public static void Sort<T>(T[] array) where T : IComparable
+        public static void Sort<T>(T[] matrix) where T : IComparable
         {
-            for (int i = 1; i < array.Length; i++)
+            for (int i = 1; i < matrix.Length; i++)
             {
                 int j = i;
-                while (j > 0 && array[j].CompareTo(array[j - 1]) < 0)
+                while (j > 0 && matrix[j].CompareTo(matrix[j - 1]) < 0)
                 {
-                    Swap.swap(array, j, j - 1);
+                    Swap.swap(matrix, j, j - 1);
                     j--;
                 }
             }
         }
 
-        public static void RecuriveSort<T>(T[] array, int n) where T : IComparable
+        public static void RecuriveSort<T>(T[] matrix, int n) where T : IComparable
         {
             if (n <= 1)
             {
                 return;
             }
 
-            RecuriveSort(array, n - 1);
-            T last = array[n - 1];
+            RecuriveSort(matrix, n - 1);
+            T last = matrix[n - 1];
 
             for (int i = n - 2; i >= 0; i--)
             {
-                if (last.CompareTo(array[i]) < 0)
+                if (last.CompareTo(matrix[i]) < 0)
                 {
-                    //last = array[i];
-                    Swap.swap(array, i, i + 1);
+                    //last = matrix[i];
+                    Swap.swap(matrix, i, i + 1);
 
                 }
             }
@@ -59,7 +59,7 @@ namespace SortingAlgorithms
 
             // Insert last element at  
             // its correct position 
-            // in sorted array. 
+            // in sorted matrix. 
             T last = arr[n - 1];
             int j = n - 2;
 

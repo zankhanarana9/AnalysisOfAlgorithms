@@ -6,54 +6,54 @@ namespace SortingAlgorithms
 {
     public static class MergeSort
     {
-        public static void Sort<T>(T[] array, int low, int high) where T : IComparable
+        public static void Sort<T>(T[] matrix, int low, int high) where T : IComparable
         {
             if (low < high)
             {
                 int mid = (low + high) / 2;
-                Sort(array, low, mid);
-                Sort(array, mid + 1, high);
+                Sort(matrix, low, mid);
+                Sort(matrix, mid + 1, high);
 
-                Merge2(array, low, mid, high);
+                Merge2(matrix, low, mid, high);
             }
         }
 
-        public static void Merge2<T>(T[] array, int low, int mid, int high) where T : IComparable
+        public static void Merge2<T>(T[] matrix, int low, int mid, int high) where T : IComparable
         {
             int start = low;
             int start2 = mid + 1;
             int n = 0;
 
-            T[] resultArray = new T[high - low + 1];
+            T[] resultmatrix = new T[high - low + 1];
             while (start <= mid && start2 <= high)
             {
-                if (array[start].CompareTo(array[start2]) < 0)
+                if (matrix[start].CompareTo(matrix[start2]) < 0)
                 {
-                    resultArray[n++] = array[start++];
+                    resultmatrix[n++] = matrix[start++];
                 }
                 else
                 {
-                    resultArray[n++] = array[start2++];
+                    resultmatrix[n++] = matrix[start2++];
                 }
             }
 
             while (start <= mid)
             {
-                resultArray[n++] = array[start++];
+                resultmatrix[n++] = matrix[start++];
             }
             while (start2 <= high)
             {
-                resultArray[n++] = array[start2++];
+                resultmatrix[n++] = matrix[start2++];
             }
 
             n = 0;
-            for (int i = low; i <= high && n < resultArray.Length; i++, n++)
+            for (int i = low; i <= high && n < resultmatrix.Length; i++, n++)
             {
-                array[i] = resultArray[n];
+                matrix[i] = resultmatrix[n];
             }
         }
 
-        public static void Merge<T>(T[] array, int low, int mid, int high) where T : IComparable
+        public static void Merge<T>(T[] matrix, int low, int mid, int high) where T : IComparable
         {
 
             int n1 = mid - low + 1;
@@ -64,39 +64,39 @@ namespace SortingAlgorithms
 
             for (int i = 0; i < n1; i++)
             {
-                temp1[i] = array[low + i];
+                temp1[i] = matrix[low + i];
             }
 
             for (int j = 0; j < n2; j++)
             {
-                temp2[j] = array[mid + 1 + j];
+                temp2[j] = matrix[mid + 1 + j];
             }
 
             int start = 0;
             int start2 = 0;
 
-            //Initial index of merged subarray 
+            //Initial index of merged submatrix 
             int n = low;
 
             while (start < n1 && start2 < n2)
             {
                 if (temp1[start].CompareTo(temp2[start2]) < 0)
                 {
-                    array[n++] = temp1[start++];
+                    matrix[n++] = temp1[start++];
                 }
                 else
                 {
-                    array[n++] = temp2[start2++];
+                    matrix[n++] = temp2[start2++];
                 }
             }
             while (start < n1)
             {
-                array[n++] = temp1[start++];
+                matrix[n++] = temp1[start++];
             }
 
             while (start2 < n2)
             {
-                array[n++] = temp2[start2++];
+                matrix[n++] = temp2[start2++];
             }
         }
     }
