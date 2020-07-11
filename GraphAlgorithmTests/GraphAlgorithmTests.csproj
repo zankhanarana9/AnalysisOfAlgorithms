@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{371B630B-967A-48E9-8C5E-0E696EB566BF}</ProjectGuid>
+    <ProjectGuid>{F66116F2-9B61-4113-AA51-7533E6734B59}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SortingAlgorithmsTest</RootNamespace>
-    <AssemblyName>SortingAlgorithmsTest</AssemblyName>
+    <RootNamespace>GraphAlgorithmTests</RootNamespace>
+    <AssemblyName>GraphAlgorithmTests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,16 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CountingSortTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Sorting\SortingAlgorithms.csproj">
-      <Project>{90c07c46-e9d9-4898-833e-07c5deec18bf}</Project>
-      <Name>SortingAlgorithms</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
